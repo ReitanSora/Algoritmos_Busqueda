@@ -47,7 +47,7 @@ class Navegacion(tk.Frame):
 
         # label de información - footer
         tk.Label(nav_frame,
-                 text="Programa sobre Búsquedas\nGrupo-3",
+                 text="Algoritmos de Búsquedas\nGrupo-3",
                  font=("Corbel", 10, "normal"),
                  background=style.COLOR_CIAN_CLARO,
                  foreground="#FFF",

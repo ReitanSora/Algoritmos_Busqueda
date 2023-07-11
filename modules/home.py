@@ -38,7 +38,7 @@ class Home(tk.Frame):
                  ).pack(side=tk.TOP, anchor=tk.W, padx=20)
         
         tk.Label(self,
-                 text='''En este programa de la materia de algoritmos, se encuentran 4 búsquedas diferentes, como la búsqueda lineal, binaria de forma iterativa, binaria de forma recursiva y la búsqueda hash.
+                 text='''En este programa de la materia de algoritmos, se encuentran integradas 4 búsquedas diferentes, las cuales son:\n     • Búsqueda Lineal\n     • Búsqueda Binaria Iterativa\n     • Búsqueda Binaria Recursiva\n     • Búsqueda Hash\n
                         ''',
                  **style.STYLE_TEXT,
                  justify="left",
@@ -46,16 +46,10 @@ class Home(tk.Frame):
                  ).pack(side=tk.TOP, anchor=tk.W, padx=20)
         
         tk.Label(self,
-                 text='''Búsqueda Lineal''',
-                 **style.STYLE_SUBTITTLE,
-                 justify="left",
-                 wraplength="600p"
-                 ).pack(side=tk.TOP, anchor=tk.W, padx=20)
-        
-        tk.Label(self,
-                 text='''Como dice su nombre, consiste en ir comparando el elemento buscado con cada elemento del array hasta encontrarlo
+                 text='''Para el funcionamiento de esta herramienta solamente deberá ingresar de forma manual o aleatoria los números que desee, el otro dato que necesita ingresar es lo que desea buscar y por último el tipo de búsqueda que quiere usar.\nEl aplicativo lo que hace es ordenar todos los números que se le vayan ingresando, y cuando se busca un dato, realizará la búsqueda dependiendo del tipo que hayamos elegido.
                         ''',
                  **style.STYLE_TEXT,
                  justify="left",
                  wraplength="600p"
                  ).pack(side=tk.TOP, anchor=tk.W, padx=20)
+       

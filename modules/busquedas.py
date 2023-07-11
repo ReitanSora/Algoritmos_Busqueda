@@ -105,7 +105,7 @@ class AlgoritmosBusqueda(tk.Frame):
     def init_widget(self):
         # titulo de la ventana
         tk.Label(self,
-                 text="Búsqueda Lineal",
+                 text="Búsquedas",
                  **style.STYLE_TITTLE,
                  ).pack(side=tk.TOP, fill=tk.X, pady=20)
 
