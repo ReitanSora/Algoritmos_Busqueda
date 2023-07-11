@@ -79,15 +79,14 @@ class AlgoritmosBusqueda(tk.Frame):
                     aux, posicion) if posicion != -1 else "No se encontró el valor en el arreglo")
             
             elif self.busqueda.get() ==3:
-                pass
-                # busquedas.binaria_r(self.matriz, aux)
-                # posicion = busquedas.binaria_r(self.matriz, aux)
-                # fin = time.time()
-                # tiempo_final = fin - inicio
-                # self.mensaje.set("El tiempo de ejecución de la búsqueda fue: {:.6f} s en buscar el número [{}] en un arreglo de [{}] elementos, usando el Algoritmo de Búsqueda {}".format(
-                #     tiempo_final, aux, len(self.matriz), "Binaria Recursiva"))
-                # self.respuesta.set("El número [{}] se encuentra en la posición [{}]".format(
-                #     aux, posicion) if posicion != -1 else "No se encontró el valor en el arreglo")
+                busquedas.binaria_r(self.matriz, 0, len(self.matriz)-1, aux)
+                posicion = busquedas.binaria_r(self.matriz, 0, len(self.matriz)-1, aux)
+                fin = time.time()
+                tiempo_final = fin - inicio
+                self.mensaje.set("El tiempo de ejecución de la búsqueda fue: {:.6f} s en buscar el número [{}] en un arreglo de [{}] elementos, usando el Algoritmo de Búsqueda {}".format(
+                    tiempo_final, aux, len(self.matriz), "Binaria Recursiva"))
+                self.respuesta.set("El número [{}] se encuentra en la posición [{}]".format(
+                    aux, posicion) if posicion != -1 else "No se encontró el valor en el arreglo")
                 
             elif self.busqueda.get() == 4:
                 busquedas.busqueda_hash(self.matriz, aux)
